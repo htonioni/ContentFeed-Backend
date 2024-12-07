@@ -1,2 +1,16 @@
-db.sqlite3
-venv
+# Byte-compiled files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment directories
+env/
+venv/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
