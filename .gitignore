@@ -2,7 +2,6 @@
 *.pyc
 *.pyo
 __pycache__/
-
 # Virtual environment directories
 env/
 venv/
