@@ -1,6 +1,6 @@
 from rest_framework import serializers
-from django.contrib.auth.models import User
 from posts.models import Post
+from users.models import User
 
 
 class PostSerializer(serializers.Serializer):
@@ -8,5 +8,4 @@ class PostSerializer(serializers.Serializer):
     author = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())
 
     def create(self,validated_data):
-        import pdb; pdb.set_trace()
         return Post.objects.create(**validated_data)    
